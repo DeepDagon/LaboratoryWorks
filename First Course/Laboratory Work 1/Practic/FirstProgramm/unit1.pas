@@ -56,11 +56,6 @@ begin
 
 end;
 
-procedure TMainForm.LabelPLClick(Sender: TObject);
-begin
-
-end;
-
 procedure TMainForm.TaskButtonClick(Sender: TObject);
 begin
   ShowMessage('Задача этой кнопки выводить сообщение об условии задачи.');
