@@ -1,0 +1,100 @@
+object MainForm: TMainForm
+  Left = 367
+  Height = 174
+  Top = 290
+  Width = 512
+  Caption = 'Laboratory Work 2'
+  ClientHeight = 174
+  ClientWidth = 512
+  LCLVersion = '1.8.4.0'
+  object RunButton: TButton
+    Left = 16
+    Height = 25
+    Top = 112
+    Width = 80
+    Caption = 'Выполнить'
+    OnClick = RunButtonClick
+    TabOrder = 0
+  end
+  object AEdit: TEdit
+    Left = 16
+    Height = 23
+    Top = 48
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 1
+    Text = 'Variable A'
+  end
+  object BEdit: TEdit
+    Left = 16
+    Height = 23
+    Top = 80
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 2
+    Text = 'Variable B'
+  end
+  object InfoLabelA: TLabel
+    Left = 104
+    Height = 15
+    Top = 56
+    Width = 119
+    Caption = 'Переменная a равна: '
+    ParentColor = False
+  end
+  object InfoLabelB: TLabel
+    Left = 104
+    Height = 15
+    Top = 88
+    Width = 123
+    Caption = 'Переменная b равна:  '
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 25
+    Top = 8
+    Width = 94
+    Caption = 'Задание 1:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 304
+    Height = 25
+    Top = 8
+    Width = 94
+    Caption = 'Задание 2:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 304
+    Height = 25
+    Top = 104
+    Width = 112
+    Caption = 'Решить пример'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 304
+    Height = 15
+    Top = 56
+    Width = 128
+    Caption = 'Выражение равняется: '
+    ParentColor = False
+  end
+end
