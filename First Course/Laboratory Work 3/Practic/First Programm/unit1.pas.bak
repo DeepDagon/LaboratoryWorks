@@ -1,0 +1,48 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TMainForm }
+
+  TMainForm = class(TForm)
+    RunButton: TButton;
+    ClearButton: TButton;
+    YEdit: TEdit;
+    YLabel: TLabel;
+    XLabel: TLabel;
+    XEdit: TEdit;
+    procedure ClearButtonClick(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+  x, y:real;
+
+
+implementation
+
+{$R *.lfm}
+
+{ TMainForm }
+
+
+
+procedure TMainForm.ClearButtonClick(Sender: TObject);
+begin
+  XEdit.Clear;
+  YEdit.Clear;
+end;
+
+end.
+

@@ -1,0 +1,57 @@
+object MainForm: TMainForm
+  Left = 272
+  Height = 240
+  Top = 130
+  Width = 320
+  Caption = 'Laboratory Work 3'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.8.4.0'
+  object runButton: TButton
+    Left = 101
+    Height = 25
+    Top = 104
+    Width = 80
+    Caption = 'Выполнить'
+    OnClick = runButtonClick
+    TabOrder = 0
+  end
+  object clearButton: TButton
+    Left = 101
+    Height = 25
+    Top = 136
+    Width = 80
+    Caption = 'Очистить'
+    OnClick = clearButtonClick
+    TabOrder = 1
+  end
+  object XEdit: TEdit
+    Left = 101
+    Height = 23
+    Top = 72
+    Width = 80
+    TabOrder = 2
+  end
+  object XLabel: TLabel
+    Left = 80
+    Height = 20
+    Top = 75
+    Width = 17
+    Caption = 'X='
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object resultLabel: TLabel
+    Left = 101
+    Height = 1
+    Top = 48
+    Width = 1
+    ParentColor = False
+  end
+end
