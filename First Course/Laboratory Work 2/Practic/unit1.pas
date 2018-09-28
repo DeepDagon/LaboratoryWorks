@@ -16,6 +16,7 @@ type
 
   TMainForm = class(TForm)
     Button1: TButton;
+    XEdit: TEdit;
     InfoLabelA: TLabel;
     InfoLabelB: TLabel;
     Label1: TLabel;
@@ -66,7 +67,7 @@ end;
  (* Второе задание *)
 procedure TMainForm.Button1Click(Sender: TObject);
 begin
- x := 1;
+ x := strtoint(XEdit.Text);
  y := ln(Exp(x) + Sqrt(1+Exp(2*x)));
  Str(y : 5 : 2, s);
  Label3.Caption := 'Выражение равняется: ' + s;

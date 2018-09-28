@@ -83,7 +83,7 @@ object MainForm: TMainForm
   object Button1: TButton
     Left = 304
     Height = 25
-    Top = 104
+    Top = 112
     Width = 112
     Caption = 'Решить пример'
     OnClick = Button1Click
@@ -92,9 +92,18 @@ object MainForm: TMainForm
   object Label3: TLabel
     Left = 304
     Height = 15
-    Top = 56
+    Top = 88
     Width = 128
     Caption = 'Выражение равняется: '
     ParentColor = False
+  end
+  object XEdit: TEdit
+    Left = 304
+    Height = 23
+    Top = 56
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 4
+    Text = 'Variable X'
   end
 end
