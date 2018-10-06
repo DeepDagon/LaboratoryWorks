@@ -1,0 +1,42 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TMainForm }
+
+  TMainForm = class(TForm)
+    Label1: TLabel;
+    triangleRB: TRadioButton;
+    squareRB: TRadioButton;
+    rectRB: TRadioButton;
+    rhombusRB: TRadioButton;
+    procedure triangleRBChange(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+{$R *.lfm}
+
+{ TMainForm }
+
+procedure TMainForm.triangleRBChange(Sender: TObject);
+begin
+ label1.Caption := '124125';
+end;
+
+end.
+
